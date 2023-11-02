@@ -9,33 +9,53 @@ html, body {
     height: 100%;
     font-size: 22px;
     /* background-color: rgba(0,0,0, 0.95); */
+    /* background-color: #343434; */
 }
 
 .container {
-    padding: 4rem;
-    border: 1px dotted blue;
+    background: rgba(150,150,150, 0.1);
+    width: 350px;
+    /* padding: 2rem; */
+    /* border: 1px dotted blue; */
 }
 
 .display {
-    height: 5rem;
-    background: gray;
-    color: white;
-    border: 1px solid red;
+    height: 3rem;
+    overflow: auto;
+    width: 16rem;
+    background: rgba(150,150,150, 0.1);
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    /* float: right; */
+
 }
 
 .calc-row-buttons {
-    border: 1px solid black;
-    width: 100%;
+    /* border: 1px solid black; */
+    width: 16rem;
     height: 2rem;
     display: flex;
 }
 
 .double-button {
     flex: 2;
-    border-radius: 12px;
+    border-radius: 0.5rem;
+    color: #232323;
 }
 
 .single-button {
     flex: 1;
-    border-radius: 12px;
+    border-radius: 0.5rem;
+    color: #232323;
+}
+
+
+#green {
+    background-color: rgb(36, 166, 10);
+    color: #efefef;
+}
+
+.special {
+    background-color: rgba(200, 50, 50, 0.9);
+    color: #fff;
 }
