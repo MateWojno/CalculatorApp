@@ -1,0 +1,41 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 22px;
+    /* background-color: rgba(0,0,0, 0.95); */
+}
+
+.container {
+    padding: 4rem;
+    border: 1px dotted blue;
+}
+
+.display {
+    height: 5rem;
+    background: gray;
+    color: white;
+    border: 1px solid red;
+}
+
+.calc-row-buttons {
+    border: 1px solid black;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+}
+
+.double-button {
+    flex: 2;
+    border-radius: 12px;
+}
+
+.single-button {
+    flex: 1;
+    border-radius: 12px;
+}
