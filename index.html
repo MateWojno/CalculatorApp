@@ -3,51 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/x-icon" href="./fav-icon.ico"> -->
-    <link rel="stylesheet" href="./styles.css">
-    <title>CalculatorApp || MateWojno </title>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="display">
-           00
-        </div>
-        <div class="calc-row-buttons">
-            <button class="double-button" id="green"> C </button>
-            <button class="single-button special"> &larr;  </button>
-            <button class="single-button special"> &div; </button>
-        </div>
-        <div class="calc-row-buttons">
-            <button class="single-button"> 7 </button>
-            <button class="single-button"> 8 </button>
-            <button class="single-button"> 9 </button>
-            <button class="single-button special"> &times; </button>
-        </div>
-        <div class="calc-row-buttons">
-            <button class="single-button"> 4 </button>
-            <button class="single-button"> 5 </button>
-            <button class="single-button"> 6 </button>
-            <button class="single-button special"> &minus; </button>
-        </div>
-        <div class="calc-row-buttons">
-            <button class="single-button"> 1 </button>
-            <button class="single-button"> 2 </button>
-            <button class="single-button"> 3 </button>
-            <button class="single-button special"> &plus; </button>
-        </div>
-        <div class="calc-row-buttons">
-            <button class="double-button"> 0 </button>
-            <button class="single-button"> , </button>
-            <button class="single-button special"> &equals; </button>
-        </div>
-
-        <!-- <div class="footer">
-            made by @MateWojno
-            <div class="social-media">
-                <img src="" alt="">
-            </div> -->
-        
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="appendToDisplay('0')">0</button>
+            <button class="operator equals" onclick="calculateResult('=')">=</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ body {
 }
 
 #display {
-    width: 100%;
+    width: auto;
     padding: 10px;
     font-size: 24px;
     margin-bottom: 10px;
@@ -52,3 +52,17 @@ button {
 button:hover {
     background-color: #777;
 }
+
+/* Operator buttons */
+.operator {
+    background-color: orange;
+    color: #fff;
+}
+
+/* Equals button */
+.equals {
+    background-color: green;
+    color: #fff;
+}
+
+
