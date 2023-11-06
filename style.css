@@ -1,68 +1,62 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #0077ff75; /* Slight blue background with transparency */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
 }
 
-.calculator {
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.wrapper {
+    background-color: #efefef; /* Light gray background */
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 20px;
-    max-width: 300px;
+    max-width: 700px;
     margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "screen" "buttons";
+    grid-template-rows: auto 1fr;
 }
 
-#display {
-    width: auto;
+.screen {
     padding: 10px;
-    font-size: 24px;
-    margin-bottom: 10px;
-    background-color: #444;
-    color: #fff;
+    font-size: 36px;
+    background-color: #FA8125;
+    color: #0077ff75; /* White text */
     border: none;
+    text-align: right;
+    border-radius: 16px 16px 0 0; /* Rounded top corners */
+    margin-bottom: 8px;
 }
 
-.buttons {
+.calc-button-grid {
+    grid-area: buttons;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
 button {
-    font-size: 18px;
+    font-size: 24px;
     padding: 10px;
     border: none;
     cursor: pointer;
+    background-color: #FFA500; /* Orange buttons */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners for buttons */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow to all buttons */
 }
 
-.number, .operator, .clear {
-    background-color: #666;
-    color: #fff;
-}
-
-.clear {
-    background-color: #ff4444;
+.operator {
+    background-color: #4CAF50; /* Green background for operator buttons */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow to operator buttons */
 }
 
 button:hover {
-    background-color: #777;
+    background-color: #FF6600; /* Darker orange on hover */
 }
-
-/* Operator buttons */
-.operator {
-    background-color: orange;
-    color: #fff;
-}
-
-/* Equals button */
-.equals {
-    background-color: green;
-    color: #fff;
-}
-
-
