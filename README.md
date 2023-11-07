@@ -1,4 +1,4 @@
-# Calculator App
+# Calculator App [with-AI]
 
 This is a simple calculator web application that allows you to perform basic arithmetic operations. You can use this calculator to add, subtract, multiply, and divide numbers. Additionally, it supports backspace for correcting input, and you can use either the mouse or keyboard to interact with it.
 
